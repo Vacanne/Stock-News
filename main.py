@@ -57,8 +57,8 @@ if abs(diff_percent) > 5:
     for article in formatted_articles:
         message = client.messages.create(
             body=article,
-            from_="+12176849596",
-            to="+905061214666",
+            from_="YOUR_TWILIO_NUMBER",
+            to="YOUR_NUMBER",
         )
 
 #Optional TODO: Format the message like this: 
