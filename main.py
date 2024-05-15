@@ -33,9 +33,9 @@ day_before_yesterday_closing_price = day_before_yesterday_data["4. close"]
 difference = float(yesterday_closing_price) - float(day_before_yesterday_closing_price)
 up_down = None
 if difference > 0:
-    up_down = "UP"
+    up_down = "🔺"
 else:
-    up_down = "Down"
+    up_down = "🔻"
 #TODO 4. - Work out the percentage difference in price between closing price yesterday and closing price the day before yesterday.
 diff_percent = round(difference/ float(yesterday_closing_price))* 100
 #TODO 5. - If TODO4 percentage is greater than 5 then print("Get News").
